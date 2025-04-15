@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Curado - Café de especialidad con magia en cada taza</title>
+    <meta name="description" content="Suscribite a nuestro Club del Café y recibí cafés artesanales de tostadores únicos cada mes junto con una sorpresa encantada.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Lato:wght@300;400;700&family=Pixelify+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Café Curado</h1>
+                <div class="logo-icon"></div>
+            </div>
+            <nav class="main-nav">
+                <button class="mobile-menu-toggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Inicio</a></li>
+                    <li><a href="#">Club del Café</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Tostadores</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="icon-button profile-button" aria-label="Mi perfil"></button>
+                <button class="icon-button cart-button" aria-label="Mi carrito">
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="cta-button">Unite al Club</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h2>Un café nuevo cada mes</h2>
+            <p>Suscribite y recibí cafés artesanales de tostadores únicos + una sorpresa encantada.</p>
+            <button class="cta-button cta-button-large">Descubrí los planes</button>
+            <div class="floating-beans">
+                <span class="bean"></span>
+                <span class="bean"></span>
+                <span class="bean"></span>
+                <span class="bean"></span>
+                <span class="bean"></span>
+            </div>
+            <div class="steaming-cup"></div>
+        </div>
+    </section>
+
+    <section class="plans-section" id="plans">
+        <div class="container">
+            <h2>Elegí tu plan mágico</h2>
+            <p class="section-subtitle">Todos los planes incluyen envío gratis y la magia de un café único cada mes</p>
+            
+            <div class="plans-container">
+                <div class="plan-card" id="plan-explorador">
+                    <div class="plan-icon explorador-icon"></div>
+                    <h3>Explorador</h3>
+                    <div class="plan-price">$10.000 /mes</div>
+                    <ul class="plan-features">
+                        <li>250g de café (1 tostador único)</li>
+                        <li>Regalo: Filtros pixelados o sticker artesanal</li>
+                        <li>Guía digital de cata (PDF)</li>
+                    </ul>
+                    <button class="plan-button">Elegir Plan</button>
+                </div>
+                
+                <div class="plan-card popular" id="plan-aficionado">
+                    <div class="popular-badge">Más Popular</div>
+                    <div class="plan-icon aficionado-icon"></div>
+                    <h3>Aficionado</h3>
+                    <div class="plan-price">$18.000 /mes</div>
+                    <ul class="plan-features">
+                        <li>500g de café (2 variedades, distintos tostadores)</li>
+                        <li>Regalo: Taza de cerámica o chocolate rústico</li>
+                        <li>Guía + receta mensual especial</li>
+                    </ul>
+                    <button class="plan-button">Elegir Plan</button>
+                </div>
+                
+                <div class="plan-card" id="plan-maestro">
+                    <div class="plan-icon maestro-icon"></div>
+                    <h3>Maestro</h3>
+                    <div class="plan-price">$25.000 /mes</div>
+                    <ul class="plan-features">
+                        <li>750g de café (3 variedades, tostadores premium)</li>
+                        <li>Regalo: Aeropress, molinillo o tote bag pixelado</li>
+                        <li>Guía, receta y video con el tostador</li>
+                    </ul>
+                    <button class="plan-button">Elegir Plan</button>
+                </div>
+            </div>
+            
+            <div class="promo-banner">
+                <div class="promo-icon"></div>
+                <p>¡Primer mes 15% off en cualquier plan!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ritual-section">
+        <div class="container">
+            <h2>El ritual de Café Curado</h2>
+            <div class="ritual-features">
+                <div class="ritual-feature">
+                    <div class="feature-icon roaster-icon"></div>
+                    <h3>Tostadores rotativos</h3>
+                    <p>Cada mes, un tostador artesanal trae su magia a tu taza.</p>
+                </div>
+                <div class="ritual-feature">
+                    <div class="feature-icon gift-icon"></div>
+                    <h3>Sorpresas encantadas</h3>
+                    <p>Tazas, chocolates o herramientas para tu ritual mensual.</p>
+                </div>
+                <div class="ritual-feature">
+                    <div class="feature-icon sustainable-icon"></div>
+                    <h3>Sostenible y único</h3>
+                    <p>Apoyamos pequeños productores y tostadores locales.</p>
+                </div>
+            </div>
+            <button class="secondary-button">Conocé el tostador de este mes</button>
+        </div>
+    </section>
+
+    <section class="store-section">
+        <div class="container">
+            <h2>Nuestra tienda mágica</h2>
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="all">Todos</button>
+                <button class="tab-button" data-category="coffee">Cafés</button>
+                <button class="tab-button" data-category="accessories">Accesorios</button>
+                <button class="tab-button" data-category="gifts">Regalos</button>
+                <button class="tab-button" data-category="combos">Combos</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Café 1 -->
+                <div class="product-card" data-category="coffee">
+                    <div class="product-image" style="background-image: url('img/coffee-1.jpg');">
+                        <div class="product-tag">Origen: Etiopía</div>
+                    </div>
+                    <h3>Café Etíope Yirgacheffe</h3>
+                    <p class="product-description">Notas de bergamota, jazmín y melocotón.</p>
+                    <div class="product-price">$6.500</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                
+                <!-- Café 2 -->
+                <div class="product-card" data-category="coffee">
+                    <div class="product-image" style="background-image: url('img/coffee-2.jpg');">
+                        <div class="product-tag">Origen: Colombia</div>
+                    </div>
+                    <h3>Café Colombiano Huila</h3>
+                    <p class="product-description">Notas de caramelo, manzana roja y chocolate.</p>
+                    <div class="product-price">$5.800</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                
+                <!-- Accesorio -->
+                <div class="product-card" data-category="accessories">
+                    <div class="product-image" style="background-image: url('img/aeropress.jpg');"></div>
+                    <h3>AeroPress Original</h3>
+                    <p class="product-description">La manera perfecta de extraer todo el sabor.</p>
+                    <div class="product-price">$35.000</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                
+                <!-- Regalo -->
+                <div class="product-card" data-category="gifts">
+                    <div class="product-image" style="background-image: url('img/mug.jpg');"></div>
+                    <h3>Taza Encantada</h3>
+                    <p class="product-description">Cerámica artesanal con diseño pixelado.</p>
+                    <div class="product-price">$7.500</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                
+                <!-- Combo -->
+                <div class="product-card featured" data-category="combos">
+                    <div class="product-image" style="background-image: url('img/kit.jpg');">
+                        <div class="product-tag special">Kit Encantado</div>
+                    </div>
+                    <h3>Kit Ritual Completo</h3>
+                    <p class="product-description">Café + V60 + Filtros + Taza pixelada.</p>
+                    <div class="product-price">$45.000</div>
+                    <div class="original-price">$55.000</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                
+                <!-- Café 3 -->
+                <div class="product-card" data-category="coffee">
+                    <div class="product-image" style="background-image: url('img/coffee-3.jpg');">
+                        <div class="product-tag">Origen: Guatemala</div>
+                    </div>
+                    <h3>Café Guatemalteco Huehuetenango</h3>
+                    <p class="product-description">Notas de chocolate negro, naranja y canela.</p>
+                    <div class="product-price">$6.200</div>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+            </div>
+            
+            <button class="secondary-button view-all-button">Ver todos los productos</button>
+        </div>
+    </section>
+
+    <section class="roasters-section">
+        <div class="container">
+            <h2>Conocé a los artesanos detrás de tu café</h2>
+            <div class="roasters-slider">
+                <div class="roaster-card">
+                    <div class="roaster-image" style="background-image: url('img/roaster-1.jpg');"></div>
+                    <div class="pixel-overlay"></div>
+                    <h3>Tostadero Mágico</h3>
+                    <p>Buenos Aires</p>
+                    <button class="roaster-button">Conocer más</button>
+                </div>
+                <div class="roaster-card">
+                    <div class="roaster-image" style="background-image: url('img/roaster-2.jpg');"></div>
+                    <div class="pixel-overlay"></div>
+                    <h3>Montaña de Café</h3>
+                    <p>Córdoba</p>
+                    <button class="roaster-button">Conocer más</button>
+                </div>
+                <div class="roaster-card">
+                    <div class="roaster-image" style="background-image: url('img/roaster-3.jpg');"></div>
+                    <div class="pixel-overlay"></div>
+                    <h3>Puerto Cafetera</h3>
+                    <p>Rosario</p>
+                    <button class="roaster-button">Conocer más</button>
+                </div>
+                <!-- Flechas de navegación -->
+                <button class="slider-arrow slider-prev" aria-label="Anterior"></button>
+                <button class="slider-arrow slider-next" aria-label="Siguiente"></button>
+            </div>
+            <button class="secondary-button">Ver todos los tostadores</button>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="container">
+            <h2>El mundo del café</h2>
+            <div class="blog-posts">
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('img/blog-1.jpg');"></div>
+                    <div class="blog-content">
+                        <div class="blog-category">Guías</div>
+                        <h3>El arte de un café perfecto</h3>
+                        <p>Descubrí los secretos para preparar un café de especialidad en casa.</p>
+                        <a href="#" class="blog-link">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('img/blog-2.jpg');"></div>
+                    <div class="blog-content">
+                        <div class="blog-category">Tostadores</div>
+                        <h3>Tostador del mes: su historia</h3>
+                        <p>Conocé la historia detrás de Tostadero Mágico y su pasión por el café.</p>
+                        <a href="#" class="blog-link">Leer más</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image" style="background-image: url('img/blog-3.jpg');"></div>
+                    <div class="blog-content">
+                        <div class="blog-category">Recetas</div>
+                        <h3>Mocha encantado</h3>
+                        <p>Una receta mágica que combina nuestro café con chocolate artesanal.</p>
+                        <a href="#" class="blog-link">Leer más</a>
+                    </div>
+                </article>
+            </div>
+            <button class="secondary-button">Ver todas las publicaciones</button>
+        </div>
+    </section>
+
+    <section class="coffee-quiz">
+        <div class="container">
+            <div class="quiz-content">
+                <h2>Encontrá tu café ideal</h2>
+                <p>Respondé 3 preguntas y te recomendaremos el café perfecto para vos</p>
+                <button class="cta-button">Comenzar quiz</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column logo-column">
+                    <div class="footer-logo">Café Curado</div>
+                    <p>Cafés que cuentan historias, sorpresas que encantan.</p>
+                    <p>Tu ritual, nuestro hechizo mensual.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Club del Café</a></li>
+                        <li><a href="#">Tienda</a></li>
+                        <li><a href="#">Tostadores</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Ayuda</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column newsletter-column">
+                    <h4>Sumate al ritual</h4>
+                    <p>Recibí novedades, ofertas exclusivas y tips sobre café.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit" class="newsletter-button">Suscribirme</button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon instagram" aria-label="Instagram"></a>
+                        <a href="#" class="social-icon tiktok" aria-label="TikTok"></a>
+                        <a href="#" class="social-icon facebook" aria-label="Facebook"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Café Curado. Todos los derechos reservados.</p>
+                <div class="payment-methods">
+                    <span class="payment-icon"></span>
+                    <span class="payment-icon"></span>
+                    <span class="payment-icon"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modales -->
+    <div class="modal" id="plan-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Personalizá tu plan</h3>
+            <form class="plan-form">
+                <div class="form-group">
+                    <label>Tipo de molido:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="grind" value="whole" checked>
+                            <span>Grano entero</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="grind" value="coarse">
+                            <span>Molido grueso</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="grind" value="medium">
+                            <span>Molido medio</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="grind" value="fine">
+                            <span>Molido fino</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Frecuencia:</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="frequency" value="monthly" checked>
+                            <span>Mensual</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="frequency" value="biweekly">
+                            <span>Quincenal</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="cta-button">Confirmar plan</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3>Tu carrito</h3>
+            <div class="cart-items">
+                <!-- Los items se agregarán dinámicamente -->
+                <div class="empty-cart">
+                    <div class="empty-cart-icon"></div>
+                    <p>Tu carrito está vacío</p>
+                    <button class="secondary-button">Explorar productos</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-amount">$0</span>
+                </div>
+                <button class="cta-button checkout-button">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="notification">
+        <div class="notification-content">
+            <span class="notification-message">Producto agregado al carrito</span>
+            <button class="notification-close">&times;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
